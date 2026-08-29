@@ -1,0 +1,33 @@
+
+=== project_standup ===
+- [Ravi] (confidence=0.724) Ravi finished the data cleaning for the churn dataset yesterday.
+- [Aditi] (confidence=0.768) Can you push that to the repo by end of day?
+- [Ravi] (confidence=0.908) Sure, Ravi will push it to the telco-churn-revenue-at-risk repo by 6pm today.
+- [Meera] (confidence=0.604) Meera is still stuck on the segmentation queries, the SQL is throwing an error.
+- [Meera] (confidence=0.471) Let me try that.
+- [Aditi] (confidence=0.866) Let's decide - we will finalize the five business questions by Thursday.
+- [Meera] (confidence=0.542) Agreed, Thursday works.
+- [Aditi] (confidence=0.882) So action items: Ravi pushes cleaned data today, Meera fixes segmentation query by tomorrow, and Aditi will draft the five business questions by Wednesday for review.
+- [Ravi] (confidence=0.877) One more thing, the client call got moved to Friday 3pm instead of Thursday.
+- [Aditi] (confidence=0.867) Noted, Friday 3pm for the client call.
+- [Aditi] (confidence=0.476) That's all for today, everyone.
+
+=== faculty_curriculum_meeting ===
+- [Prof. Nair] (confidence=0.709) Also can we push the ASR assignment deadline? Students requested more time.
+- [Prof. Nair] (confidence=0.743) Maybe one week, so from the 20th to the 27th.
+- [Prof. Nair] (confidence=0.89) Then let's move ASR deadline to the 27th.
+- [Dr. Rao] (confidence=0.874) Decision made - ASR assignment deadline moves to the 27th.
+- [Dr. Iyer] (confidence=0.464) Should we also add a practice quiz before the unit 4 exam?
+- [Dr. Rao] (confidence=0.723) Idea. Prof. Nair can you prepare 20 MCQs by next Monday?
+- [Prof. Nair] (confidence=0.895) Yes, Prof. Nair will have the MCQs ready by Monday.
+- [Dr. Rao] (confidence=0.749) Multilayer perceptrons and ensemble methods, matching the exam style.
+- [Prof. Nair] (confidence=0.484) Prof. Nair will base them on last year's question paper format.
+- [Dr. Rao] (confidence=0.841) Perfect. Let's also remind students the exam is on the 30th.
+- [Dr. Iyer] (confidence=0.688) Dr. Iyer will send that reminder on the class group today.
+
+=== casual_team_coffee_chat ===
+- [Priya] (confidence=0.78) Yes, we're presenting the retention recommendations next Tuesday.
+- [Priya] (confidence=0.908) Yes, could you review Priya's deck before Monday?
+- [Sam] (confidence=0.907) Sure, send it over tonight and Sam will review by tomorrow morning.
+- [Sam] (confidence=0.885) This Friday Sam think, let me check... yes, Friday midnight.
+- [Priya] (confidence=0.825) Priya will register today then.

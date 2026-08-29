@@ -1,0 +1,17 @@
+feature,importance
+tfidf_centrality,0.2011
+position_norm,0.1345
+has_date,0.1223
+repetition,0.113
+kw_score,0.1057
+word_count,0.1051
+ner_count,0.0911
+is_action,0.0386
+is_question,0.0301
+is_answer,0.0153
+has_org_gpe,0.0149
+is_short_turn,0.011
+is_decision,0.0084
+speaker_change,0.005
+has_person,0.0036
+is_long_turn,0.0002

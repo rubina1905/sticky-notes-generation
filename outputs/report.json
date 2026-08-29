@@ -1,0 +1,456 @@
+{
+  "classifier_cv_per_meeting": [
+    {
+      "held_out_meeting": "project_standup",
+      "precision": 0.545,
+      "recall": 0.545,
+      "f1": 0.545,
+      "accuracy": 0.545,
+      "roc_auc": 0.702
+    },
+    {
+      "held_out_meeting": "faculty_curriculum_meeting",
+      "precision": 0.818,
+      "recall": 0.818,
+      "f1": 0.818,
+      "accuracy": 0.789,
+      "roc_auc": 0.705
+    },
+    {
+      "held_out_meeting": "casual_team_coffee_chat",
+      "precision": 0.625,
+      "recall": 1.0,
+      "f1": 0.769,
+      "accuracy": 0.812,
+      "roc_auc": 0.945
+    }
+  ],
+  "classifier_cv_overall": {
+    "precision": 0.667,
+    "recall": 0.741,
+    "f1": 0.702,
+    "accuracy": 0.702,
+    "roc_auc": 0.744
+  },
+  "feature_importances": [
+    {
+      "feature": "tfidf_centrality",
+      "importance": 0.2011
+    },
+    {
+      "feature": "position_norm",
+      "importance": 0.1345
+    },
+    {
+      "feature": "has_date",
+      "importance": 0.1223
+    },
+    {
+      "feature": "repetition",
+      "importance": 0.113
+    },
+    {
+      "feature": "kw_score",
+      "importance": 0.1057
+    },
+    {
+      "feature": "word_count",
+      "importance": 0.1051
+    },
+    {
+      "feature": "ner_count",
+      "importance": 0.0911
+    },
+    {
+      "feature": "is_action",
+      "importance": 0.0386
+    },
+    {
+      "feature": "is_question",
+      "importance": 0.0301
+    },
+    {
+      "feature": "is_answer",
+      "importance": 0.0153
+    },
+    {
+      "feature": "has_org_gpe",
+      "importance": 0.0149
+    },
+    {
+      "feature": "is_short_turn",
+      "importance": 0.011
+    },
+    {
+      "feature": "is_decision",
+      "importance": 0.0084
+    },
+    {
+      "feature": "speaker_change",
+      "importance": 0.005
+    },
+    {
+      "feature": "has_person",
+      "importance": 0.0036
+    },
+    {
+      "feature": "is_long_turn",
+      "importance": 0.0002
+    }
+  ],
+  "sticky_notes_by_meeting": {
+    "project_standup": {
+      "generated_notes": [
+        "Ravi finished the data cleaning for the churn dataset yesterday.",
+        "Can you push that to the repo by end of day?",
+        "Sure, Ravi will push it to the telco-churn-revenue-at-risk repo by 6pm today.",
+        "Meera is still stuck on the segmentation queries, the SQL is throwing an error.",
+        "Let me try that.",
+        "Let's decide - we will finalize the five business questions by Thursday.",
+        "Agreed, Thursday works.",
+        "So action items: Ravi pushes cleaned data today, Meera fixes segmentation query by tomorrow, and Aditi will draft the five business questions by Wednesday for review.",
+        "One more thing, the client call got moved to Friday 3pm instead of Thursday.",
+        "Noted, Friday 3pm for the client call.",
+        "That's all for today, everyone."
+      ],
+      "reference_notes": [
+        "Ravi finished data cleaning for churn dataset, imputed missing tenure values using median per contract type.",
+        "Ravi to push cleaned data to telco-churn-revenue-at-risk repo by 6pm today.",
+        "Meera facing SQL error in segmentation query; fix is adding customer_id to group by clause.",
+        "Team agreed to finalize the five business questions by Thursday.",
+        "Action items: Ravi - push data today; Meera - fix segmentation query by tomorrow; Aditi - draft five business questions by Wednesday.",
+        "Client call rescheduled from Thursday to Friday 3pm."
+      ],
+      "per_note_scores": [
+        {
+          "generated": "Ravi finished the data cleaning for the churn dataset yesterday.",
+          "best_reference": "Ravi finished data cleaning for churn dataset, imputed missing tenure values using median per contract type.",
+          "rouge1": 0.538,
+          "rouge2": 0.333,
+          "rougeL": 0.538,
+          "bleu": 0.084,
+          "meteor": 0.437
+        },
+        {
+          "generated": "Can you push that to the repo by end of day?",
+          "best_reference": "Ravi to push cleaned data to telco-churn-revenue-at-risk repo by 6pm today.",
+          "rouge1": 0.308,
+          "rouge2": 0.083,
+          "rougeL": 0.308,
+          "bleu": 0.033,
+          "meteor": 0.216
+        },
+        {
+          "generated": "Sure, Ravi will push it to the telco-churn-revenue-at-risk repo by 6pm today.",
+          "best_reference": "Ravi to push cleaned data to telco-churn-revenue-at-risk repo by 6pm today.",
+          "rouge1": 0.774,
+          "rouge2": 0.552,
+          "rougeL": 0.774,
+          "bleu": 0.551,
+          "meteor": 0.78
+        },
+        {
+          "generated": "Meera is still stuck on the segmentation queries, the SQL is throwing an error.",
+          "best_reference": "Meera facing SQL error in segmentation query; fix is adding customer_id to group by clause.",
+          "rouge1": 0.4,
+          "rouge2": 0.071,
+          "rougeL": 0.267,
+          "bleu": 0.021,
+          "meteor": 0.305
+        },
+        {
+          "generated": "Let me try that.",
+          "best_reference": "Ravi finished data cleaning for churn dataset, imputed missing tenure values using median per contract type.",
+          "rouge1": 0.0,
+          "rouge2": 0.0,
+          "rougeL": 0.0,
+          "bleu": 0.0,
+          "meteor": 0.0
+        },
+        {
+          "generated": "Let's decide - we will finalize the five business questions by Thursday.",
+          "best_reference": "Team agreed to finalize the five business questions by Thursday.",
+          "rouge1": 0.636,
+          "rouge2": 0.6,
+          "rougeL": 0.636,
+          "bleu": 0.571,
+          "meteor": 0.692
+        },
+        {
+          "generated": "Agreed, Thursday works.",
+          "best_reference": "Team agreed to finalize the five business questions by Thursday.",
+          "rouge1": 0.308,
+          "rouge2": 0.0,
+          "rougeL": 0.308,
+          "bleu": 0.013,
+          "meteor": 0.108
+        },
+        {
+          "generated": "So action items: Ravi pushes cleaned data today, Meera fixes segmentation query by tomorrow, and Aditi will draft the five business questions by Wednesday for review.",
+          "best_reference": "Action items: Ravi - push data today; Meera - fix segmentation query by tomorrow; Aditi - draft five business questions by Wednesday.",
+          "rouge1": 0.844,
+          "rouge2": 0.651,
+          "rougeL": 0.844,
+          "bleu": 0.323,
+          "meteor": 0.956
+        },
+        {
+          "generated": "One more thing, the client call got moved to Friday 3pm instead of Thursday.",
+          "best_reference": "Client call rescheduled from Thursday to Friday 3pm.",
+          "rouge1": 0.545,
+          "rouge2": 0.3,
+          "rougeL": 0.455,
+          "bleu": 0.093,
+          "meteor": 0.654
+        },
+        {
+          "generated": "Noted, Friday 3pm for the client call.",
+          "best_reference": "Client call rescheduled from Thursday to Friday 3pm.",
+          "rouge1": 0.533,
+          "rouge2": 0.308,
+          "rougeL": 0.267,
+          "bleu": 0.086,
+          "meteor": 0.475
+        },
+        {
+          "generated": "That's all for today, everyone.",
+          "best_reference": "Ravi to push cleaned data to telco-churn-revenue-at-risk repo by 6pm today.",
+          "rouge1": 0.095,
+          "rouge2": 0.0,
+          "rougeL": 0.095,
+          "bleu": 0.007,
+          "meteor": 0.036
+        }
+      ],
+      "aggregate_scores": {
+        "rouge1": 0.453,
+        "rouge2": 0.263,
+        "rougeL": 0.408,
+        "bleu": 0.162,
+        "meteor": 0.424,
+        "num_generated": 11,
+        "num_reference": 6
+      }
+    },
+    "faculty_curriculum_meeting": {
+      "generated_notes": [
+        "Also can we push the ASR assignment deadline? Students requested more time.",
+        "Maybe one week, so from the 20th to the 27th.",
+        "Then let's move ASR deadline to the 27th.",
+        "Decision made - ASR assignment deadline moves to the 27th.",
+        "Should we also add a practice quiz before the unit 4 exam?",
+        "Idea. Prof. Nair can you prepare 20 MCQs by next Monday?",
+        "Yes, Prof. Nair will have the MCQs ready by Monday.",
+        "Multilayer perceptrons and ensemble methods, matching the exam style.",
+        "Prof. Nair will base them on last year's question paper format.",
+        "Perfect. Let's also remind students the exam is on the 30th.",
+        "Dr. Iyer will send that reminder on the class group today."
+      ],
+      "reference_notes": [
+        "Decision: more emphasis needed on ensemble methods this semester after students struggled last exam.",
+        "ASR assignment deadline moved from the 20th to the 27th.",
+        "Ensemble assignment deadline remains the 15th, no clash with ASR extension.",
+        "Prof. Nair to prepare 20 MCQs on multilayer perceptrons and ensemble methods by Monday, based on last year's paper format.",
+        "Unit 4 exam scheduled for the 30th; Dr. Iyer to remind students via class group today."
+      ],
+      "per_note_scores": [
+        {
+          "generated": "Also can we push the ASR assignment deadline? Students requested more time.",
+          "best_reference": "ASR assignment deadline moved from the 20th to the 27th.",
+          "rouge1": 0.364,
+          "rouge2": 0.2,
+          "rougeL": 0.273,
+          "bleu": 0.091,
+          "meteor": 0.368
+        },
+        {
+          "generated": "Maybe one week, so from the 20th to the 27th.",
+          "best_reference": "ASR assignment deadline moved from the 20th to the 27th.",
+          "rouge1": 0.6,
+          "rouge2": 0.556,
+          "rougeL": 0.6,
+          "bleu": 0.517,
+          "meteor": 0.599
+        },
+        {
+          "generated": "Then let's move ASR deadline to the 27th.",
+          "best_reference": "ASR assignment deadline moved from the 20th to the 27th.",
+          "rouge1": 0.632,
+          "rouge2": 0.235,
+          "rougeL": 0.526,
+          "bleu": 0.122,
+          "meteor": 0.522
+        },
+        {
+          "generated": "Decision made - ASR assignment deadline moves to the 27th.",
+          "best_reference": "ASR assignment deadline moved from the 20th to the 27th.",
+          "rouge1": 0.737,
+          "rouge2": 0.588,
+          "rougeL": 0.737,
+          "bleu": 0.179,
+          "meteor": 0.699
+        },
+        {
+          "generated": "Should we also add a practice quiz before the unit 4 exam?",
+          "best_reference": "Unit 4 exam scheduled for the 30th; Dr. Iyer to remind students via class group today.",
+          "rouge1": 0.286,
+          "rouge2": 0.154,
+          "rougeL": 0.214,
+          "bleu": 0.065,
+          "meteor": 0.24
+        },
+        {
+          "generated": "Idea. Prof. Nair can you prepare 20 MCQs by next Monday?",
+          "best_reference": "Prof. Nair to prepare 20 MCQs on multilayer perceptrons and ensemble methods by Monday, based on last year's paper format.",
+          "rouge1": 0.437,
+          "rouge2": 0.2,
+          "rougeL": 0.437,
+          "bleu": 0.056,
+          "meteor": 0.332
+        },
+        {
+          "generated": "Yes, Prof. Nair will have the MCQs ready by Monday.",
+          "best_reference": "Prof. Nair to prepare 20 MCQs on multilayer perceptrons and ensemble methods by Monday, based on last year's paper format.",
+          "rouge1": 0.323,
+          "rouge2": 0.138,
+          "rougeL": 0.323,
+          "bleu": 0.025,
+          "meteor": 0.235
+        },
+        {
+          "generated": "Multilayer perceptrons and ensemble methods, matching the exam style.",
+          "best_reference": "Prof. Nair to prepare 20 MCQs on multilayer perceptrons and ensemble methods by Monday, based on last year's paper format.",
+          "rouge1": 0.333,
+          "rouge2": 0.286,
+          "rougeL": 0.333,
+          "bleu": 0.131,
+          "meteor": 0.263
+        },
+        {
+          "generated": "Prof. Nair will base them on last year's question paper format.",
+          "best_reference": "Prof. Nair to prepare 20 MCQs on multilayer perceptrons and ensemble methods by Monday, based on last year's paper format.",
+          "rouge1": 0.545,
+          "rouge2": 0.323,
+          "rougeL": 0.545,
+          "bleu": 0.061,
+          "meteor": 0.393
+        },
+        {
+          "generated": "Perfect. Let's also remind students the exam is on the 30th.",
+          "best_reference": "Unit 4 exam scheduled for the 30th; Dr. Iyer to remind students via class group today.",
+          "rouge1": 0.357,
+          "rouge2": 0.154,
+          "rougeL": 0.214,
+          "bleu": 0.038,
+          "meteor": 0.288
+        },
+        {
+          "generated": "Dr. Iyer will send that reminder on the class group today.",
+          "best_reference": "Unit 4 exam scheduled for the 30th; Dr. Iyer to remind students via class group today.",
+          "rouge1": 0.519,
+          "rouge2": 0.24,
+          "rougeL": 0.444,
+          "bleu": 0.078,
+          "meteor": 0.409
+        }
+      ],
+      "aggregate_scores": {
+        "rouge1": 0.467,
+        "rouge2": 0.279,
+        "rougeL": 0.422,
+        "bleu": 0.124,
+        "meteor": 0.395,
+        "num_generated": 11,
+        "num_reference": 5
+      }
+    },
+    "casual_team_coffee_chat": {
+      "generated_notes": [
+        "Yes, we're presenting the retention recommendations next Tuesday.",
+        "Yes, could you review Priya's deck before Monday?",
+        "Sure, send it over tonight and Sam will review by tomorrow morning.",
+        "This Friday Sam think, let me check... yes, Friday midnight.",
+        "Priya will register today then."
+      ],
+      "reference_notes": [
+        "Priya presenting retention recommendations for churn project next Tuesday.",
+        "Sam to review Priya's slide deck by tomorrow morning after she sends it tonight.",
+        "AI hackathon registration deadline is this Friday midnight; Priya to register today."
+      ],
+      "per_note_scores": [
+        {
+          "generated": "Yes, we're presenting the retention recommendations next Tuesday.",
+          "best_reference": "Priya presenting retention recommendations for churn project next Tuesday.",
+          "rouge1": 0.556,
+          "rouge2": 0.25,
+          "rougeL": 0.556,
+          "bleu": 0.078,
+          "meteor": 0.501
+        },
+        {
+          "generated": "Yes, could you review Priya's deck before Monday?",
+          "best_reference": "Sam to review Priya's slide deck by tomorrow morning after she sends it tonight.",
+          "rouge1": 0.333,
+          "rouge2": 0.182,
+          "rougeL": 0.333,
+          "bleu": 0.031,
+          "meteor": 0.191
+        },
+        {
+          "generated": "Sure, send it over tonight and Sam will review by tomorrow morning.",
+          "best_reference": "Sam to review Priya's slide deck by tomorrow morning after she sends it tonight.",
+          "rouge1": 0.593,
+          "rouge2": 0.24,
+          "rougeL": 0.37,
+          "bleu": 0.088,
+          "meteor": 0.509
+        },
+        {
+          "generated": "This Friday Sam think, let me check... yes, Friday midnight.",
+          "best_reference": "AI hackathon registration deadline is this Friday midnight; Priya to register today.",
+          "rouge1": 0.273,
+          "rouge2": 0.2,
+          "rougeL": 0.273,
+          "bleu": 0.048,
+          "meteor": 0.217
+        },
+        {
+          "generated": "Priya will register today then.",
+          "best_reference": "AI hackathon registration deadline is this Friday midnight; Priya to register today.",
+          "rouge1": 0.353,
+          "rouge2": 0.133,
+          "rougeL": 0.353,
+          "bleu": 0.031,
+          "meteor": 0.226
+        }
+      ],
+      "aggregate_scores": {
+        "rouge1": 0.422,
+        "rouge2": 0.201,
+        "rougeL": 0.377,
+        "bleu": 0.055,
+        "meteor": 0.329,
+        "num_generated": 5,
+        "num_reference": 3
+      }
+    }
+  },
+  "project_information": {
+    "number_of_meetings": 3,
+    "model": "Random Forest",
+    "validation": "Leave-One-Meeting-Out Cross-Validation",
+    "importance_threshold": 0.42,
+    "evaluation_metrics": [
+      "Precision",
+      "Recall",
+      "F1",
+      "Accuracy",
+      "ROC-AUC",
+      "ROUGE-1",
+      "ROUGE-2",
+      "ROUGE-L",
+      "BLEU-4",
+      "METEOR"
+    ]
+  }
+}

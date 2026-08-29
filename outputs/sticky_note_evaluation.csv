@@ -1,0 +1,28 @@
+meeting,generated,best_reference,rouge1,rouge2,rougeL,bleu,meteor
+project_standup,Ravi finished the data cleaning for the churn dataset yesterday.,"Ravi finished data cleaning for churn dataset, imputed missing tenure values using median per contract type.",0.538,0.333,0.538,0.084,0.437
+project_standup,Can you push that to the repo by end of day?,Ravi to push cleaned data to telco-churn-revenue-at-risk repo by 6pm today.,0.308,0.083,0.308,0.033,0.216
+project_standup,"Sure, Ravi will push it to the telco-churn-revenue-at-risk repo by 6pm today.",Ravi to push cleaned data to telco-churn-revenue-at-risk repo by 6pm today.,0.774,0.552,0.774,0.551,0.78
+project_standup,"Meera is still stuck on the segmentation queries, the SQL is throwing an error.",Meera facing SQL error in segmentation query; fix is adding customer_id to group by clause.,0.4,0.071,0.267,0.021,0.305
+project_standup,Let me try that.,"Ravi finished data cleaning for churn dataset, imputed missing tenure values using median per contract type.",0.0,0.0,0.0,0.0,0.0
+project_standup,Let's decide - we will finalize the five business questions by Thursday.,Team agreed to finalize the five business questions by Thursday.,0.636,0.6,0.636,0.571,0.692
+project_standup,"Agreed, Thursday works.",Team agreed to finalize the five business questions by Thursday.,0.308,0.0,0.308,0.013,0.108
+project_standup,"So action items: Ravi pushes cleaned data today, Meera fixes segmentation query by tomorrow, and Aditi will draft the five business questions by Wednesday for review.",Action items: Ravi - push data today; Meera - fix segmentation query by tomorrow; Aditi - draft five business questions by Wednesday.,0.844,0.651,0.844,0.323,0.956
+project_standup,"One more thing, the client call got moved to Friday 3pm instead of Thursday.",Client call rescheduled from Thursday to Friday 3pm.,0.545,0.3,0.455,0.093,0.654
+project_standup,"Noted, Friday 3pm for the client call.",Client call rescheduled from Thursday to Friday 3pm.,0.533,0.308,0.267,0.086,0.475
+project_standup,"That's all for today, everyone.",Ravi to push cleaned data to telco-churn-revenue-at-risk repo by 6pm today.,0.095,0.0,0.095,0.007,0.036
+faculty_curriculum_meeting,Also can we push the ASR assignment deadline? Students requested more time.,ASR assignment deadline moved from the 20th to the 27th.,0.364,0.2,0.273,0.091,0.368
+faculty_curriculum_meeting,"Maybe one week, so from the 20th to the 27th.",ASR assignment deadline moved from the 20th to the 27th.,0.6,0.556,0.6,0.517,0.599
+faculty_curriculum_meeting,Then let's move ASR deadline to the 27th.,ASR assignment deadline moved from the 20th to the 27th.,0.632,0.235,0.526,0.122,0.522
+faculty_curriculum_meeting,Decision made - ASR assignment deadline moves to the 27th.,ASR assignment deadline moved from the 20th to the 27th.,0.737,0.588,0.737,0.179,0.699
+faculty_curriculum_meeting,Should we also add a practice quiz before the unit 4 exam?,Unit 4 exam scheduled for the 30th; Dr. Iyer to remind students via class group today.,0.286,0.154,0.214,0.065,0.24
+faculty_curriculum_meeting,Idea. Prof. Nair can you prepare 20 MCQs by next Monday?,"Prof. Nair to prepare 20 MCQs on multilayer perceptrons and ensemble methods by Monday, based on last year's paper format.",0.437,0.2,0.437,0.056,0.332
+faculty_curriculum_meeting,"Yes, Prof. Nair will have the MCQs ready by Monday.","Prof. Nair to prepare 20 MCQs on multilayer perceptrons and ensemble methods by Monday, based on last year's paper format.",0.323,0.138,0.323,0.025,0.235
+faculty_curriculum_meeting,"Multilayer perceptrons and ensemble methods, matching the exam style.","Prof. Nair to prepare 20 MCQs on multilayer perceptrons and ensemble methods by Monday, based on last year's paper format.",0.333,0.286,0.333,0.131,0.263
+faculty_curriculum_meeting,Prof. Nair will base them on last year's question paper format.,"Prof. Nair to prepare 20 MCQs on multilayer perceptrons and ensemble methods by Monday, based on last year's paper format.",0.545,0.323,0.545,0.061,0.393
+faculty_curriculum_meeting,Perfect. Let's also remind students the exam is on the 30th.,Unit 4 exam scheduled for the 30th; Dr. Iyer to remind students via class group today.,0.357,0.154,0.214,0.038,0.288
+faculty_curriculum_meeting,Dr. Iyer will send that reminder on the class group today.,Unit 4 exam scheduled for the 30th; Dr. Iyer to remind students via class group today.,0.519,0.24,0.444,0.078,0.409
+casual_team_coffee_chat,"Yes, we're presenting the retention recommendations next Tuesday.",Priya presenting retention recommendations for churn project next Tuesday.,0.556,0.25,0.556,0.078,0.501
+casual_team_coffee_chat,"Yes, could you review Priya's deck before Monday?",Sam to review Priya's slide deck by tomorrow morning after she sends it tonight.,0.333,0.182,0.333,0.031,0.191
+casual_team_coffee_chat,"Sure, send it over tonight and Sam will review by tomorrow morning.",Sam to review Priya's slide deck by tomorrow morning after she sends it tonight.,0.593,0.24,0.37,0.088,0.509
+casual_team_coffee_chat,"This Friday Sam think, let me check... yes, Friday midnight.",AI hackathon registration deadline is this Friday midnight; Priya to register today.,0.273,0.2,0.273,0.048,0.217
+casual_team_coffee_chat,Priya will register today then.,AI hackathon registration deadline is this Friday midnight; Priya to register today.,0.353,0.133,0.353,0.031,0.226

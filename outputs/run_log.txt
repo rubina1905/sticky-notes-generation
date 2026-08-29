@@ -1,0 +1,73 @@
+======================================================================
+STEP 1: Importance-classifier evaluation (Leave-One-Meeting-Out CV)
+======================================================================
+  Held-out: project_standup              P=0.625 R=0.455 F1=0.526 Acc=0.591
+  Held-out: faculty_curriculum_meeting   P=0.625 R=0.455 F1=0.526 Acc=0.526
+  Held-out: casual_team_coffee_chat      P=0.556 R=1.000 F1=0.714 Acc=0.750
+  OVERALL -> P=0.600 R=0.556 F1=0.577 Acc=0.614
+
+======================================================================
+STEP 2: Feature importances (trained on all sample meetings)
+======================================================================
+  tfidf_centrality     0.2051
+  repetition           0.1438
+  position_norm        0.1403
+  kw_score             0.1181
+  word_count           0.1141
+  has_date             0.0828
+  ner_count            0.0433
+  is_question          0.0402
+  is_action            0.0362
+  is_answer            0.0185
+  has_org_gpe          0.0171
+  is_short_turn        0.0149
+  is_decision          0.0087
+  speaker_change       0.0085
+  has_person           0.0049
+  is_long_turn         0.0035
+
+======================================================================
+STEP 3 & 4: Generate sticky notes + evaluate vs. reference notes
+======================================================================
+
+--- project_standup ---
+  Generated 11 sticky notes:
+  [Ravi | turns (3, 3) | conf=0.664] Ravi finished the data cleaning for the churn dataset yesterday.
+  [Aditi | turns (6, 6) | conf=0.822] Good. Can you push that to the repo by end of day?
+  [Ravi | turns (7, 7) | conf=0.854] Sure, Ravi will push it to the telco-churn-revenue-at-risk repo by 6pm today.
+  [Meera | turns (8, 8) | conf=0.711] Meera is still stuck on the segmentation queries, the SQL is throwing an error.
+  [Meera | turns (12, 12) | conf=0.562] Let me try that.
+  [Aditi | turns (13, 13) | conf=0.925] Let's decide - we will finalize the five business questions by Thursday.
+  [Ravi | turns (15, 15) | conf=0.827] Agreed.
+  [Aditi | turns (16, 16) | conf=0.864] Great, action items: Ravi pushes cleaned data today, Meera fixes segmentation query by tomorrow, and Aditi will draft the five business questions by Wednesday for review.
+  [Meera | turns (17, 17) | conf=0.819] Sounds good.
+  [Ravi | turns (18, 18) | conf=0.915] One more thing, the client call got moved to Friday 3pm instead of Thursday.
+  [Aditi | turns (19, 19) | conf=0.957] Noted, Friday 3pm for the client call.
+  Eval vs reference -> ROUGE-1=0.432 ROUGE-2=0.263 ROUGE-L=0.387 BLEU=0.136 METEOR=0.009
+
+--- faculty_curriculum_meeting ---
+  Generated 11 sticky notes:
+  [Dr. Iyer | turns (1, 1) | conf=0.527] Sure, Dr. Iyer think we need more emphasis on ensemble methods this semester.
+  [Prof. Nair | turns (3, 3) | conf=0.749] Also can we push the ASR assignment deadline? Students requested more time.
+  [Prof. Nair | turns (5, 5) | conf=0.773] Maybe one week, from the 20th to the 27th.
+  [Prof. Nair | turns (8, 8) | conf=0.906] Then let's move ASR deadline to the 27th.
+  [Dr. Rao | turns (9, 9) | conf=0.914] Decision made - ASR assignment deadline moves to the 27th.
+  [Dr. Rao | turns (11, 11) | conf=0.755] Good idea. Prof. Nair can you prepare 20 MCQs by next Monday?
+  [Prof. Nair | turns (12, 12) | conf=0.893] Yes, Prof. Nair will have the MCQs ready by Monday.
+  [Dr. Rao | turns (14, 14) | conf=0.836] Multilayer perceptrons and ensemble methods, matching the exam style.
+  [Prof. Nair | turns (15, 15) | conf=0.671] Prof. Nair will base them on last year's question paper format.
+  [Dr. Rao | turns (16, 16) | conf=0.934] Perfect. Let's also remind students the exam is on the 30th.
+  [Dr. Iyer | turns (17, 17) | conf=0.635] Dr. Iyer will send that reminder on the class group today.
+  Eval vs reference -> ROUGE-1=0.496 ROUGE-2=0.304 ROUGE-L=0.452 BLEU=0.188 METEOR=0.0
+
+--- casual_team_coffee_chat ---
+  Generated 5 sticky notes:
+  [Priya | turns (5, 5) | conf=0.858] Yes, we're presenting the retention recommendations next Tuesday.
+  [Priya | turns (7, 7) | conf=0.857] Yes, could you review Priya's deck before Monday?
+  [Sam | turns (8, 8) | conf=0.868] Sure, send it over tonight and Sam will review by tomorrow morning.
+  [Sam | turns (12, 12) | conf=0.93] This Friday Sam think, let me check... yes, Friday midnight.
+  [Priya | turns (13, 13) | conf=0.809] Priya will register today then.
+  Eval vs reference -> ROUGE-1=0.422 ROUGE-2=0.201 ROUGE-L=0.377 BLEU=0.067 METEOR=0.0
+
+Saved full report to /home/claude/sticky_notes_project/outputs/report.json
+Saved sticky notes to /home/claude/sticky_notes_project/outputs/sticky_notes.txt
