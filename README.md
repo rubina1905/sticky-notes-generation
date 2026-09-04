@@ -323,9 +323,9 @@ The Streamlit dashboard provides an interactive way to test the system using tra
 
 ## 👩‍💻 Author
 
-**Janani**
+**Janani- 2582414**
 
-**Rubina**
+**Rubina- 2582444**
 
 
 MSc Data Analytics
